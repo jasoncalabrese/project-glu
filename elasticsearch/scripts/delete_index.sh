@@ -1,0 +1,1 @@
+curl -XDELETE 'http://localhost:9209/test/'
