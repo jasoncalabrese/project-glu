@@ -1,9 +1,5 @@
 <div ng-include="'partials/navbar'"></div>
 
-<div class="jumbotron">
-  <h2>Welcome <span ng-show="currentUser">{{ currentUser.name }}</span>!</h2>
-</div>
-
 <div class="row marketing">
   <div class="entry" ng-repeat="entry in entries">
       <span class="bg" ng-class="{high: entry.bg > 200, low: entry.bg < 70, inRange: (entry.bg > 70 && entry.bg < 200)}">{{entry.bg}}</span>
