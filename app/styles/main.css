@@ -85,6 +85,9 @@ body {
 .bg {
     font-weight: bold;
     font-size: 24px;
+    width: 50px;
+    display: inline-block;
+    text-align: right;
 }
 
 .bg.inRange {

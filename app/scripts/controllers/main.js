@@ -12,7 +12,7 @@ angular.module('projectGluApp')
     update();
 
     var mapping = {
-      'NONE': '&#8596;',
+      'NONE': '&#8700;',
       'DoubleUp': '&#8648;',
       'SingleUp': '&#8593;',
       'FortyFiveUp': '&#8599;',
@@ -20,7 +20,7 @@ angular.module('projectGluApp')
       'FortyFiveDown': '&#8600;',
       'SingleDown': '&#8595;',
       'DoubleDown': '&#8650;',
-      'NOT COMPUTABLE': '???',
+      'NOT COMPUTABLE': '&#10568;',
       'RATE OUT OF RANGE': '&#8622;'
     };
 
