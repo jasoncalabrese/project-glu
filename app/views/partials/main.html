@@ -1,0 +1,13 @@
+<div ng-include="'partials/navbar'"></div>
+
+<div class="jumbotron">
+  <h2>Welcome <span ng-show="currentUser">{{ currentUser.name }}</span>!</h2>
+</div>
+
+<div class="row marketing">
+  <div ng-repeat="entry in entries">
+      <h4>{{entry.bg}}</h4>
+      <p>{{entry.timestamp}}</p>
+      <p>{{entry.direction}}</p>
+  </div>
+</div>
