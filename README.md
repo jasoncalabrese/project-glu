@@ -16,3 +16,5 @@ next steps
 ----------
 
 Currently tracking ideas/progress on [trello](https://trello.com/b/k8dwYmAI/project-glu)
+
+-[@jasoncalabrese](https://twitter.com/jasoncalabrese)
