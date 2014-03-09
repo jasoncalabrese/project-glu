@@ -77,3 +77,30 @@ body {
     border-bottom: 0;
   }
 }
+
+.entry {
+    height: 30px;
+}
+
+.bg {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.bg.inRange {
+    color: green;
+}
+
+.bg.high {
+    color: yellow;
+}
+
+.bg.low {
+    color: red;
+}
+
+.direction {
+    font-weight: bold;
+    font-size: 44px;
+    padding: 0 10px;
+}
