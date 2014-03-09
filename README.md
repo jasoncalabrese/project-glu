@@ -1,7 +1,7 @@
 Project-Glu
 ===========
 
-Project Glu is some glue that brings together data from the G4, and hopefully pump/activity tracker data
+Project-Glu is my attempt glue some existing things together to make managing my son's T1D a little easier/safer. Currently only focused on data from the G4, but later I'd like to include pump/activity tracker data.
 
 current status
 --------------
