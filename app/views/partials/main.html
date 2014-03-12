@@ -1,9 +1,14 @@
 <div ng-include="'partials/navbar'"></div>
 
 <div class="row marketing">
-  <div class="entry" ng-repeat="entry in entries">
-      <span class="bg" ng-class="{high: entry.bg > 200, low: entry.bg < 70, inRange: (entry.bg > 70 && entry.bg < 200)}">{{entry.bg}}</span>
-      <span class="direction" ng-bind-html="directionToChar(entry.direction)"></span>
-      <span>{{entry.timestamp | date:'medium'}}</span>
+  <div ng-repeat="entry in entries">
+    <!--<span class="date">-->
+        <!--<span ng-show="showDay(entry)">-->
+          <!--{{entry.timestamp | date:'mediumDate'}}-->
+        <!--</span>-->
+    <!--</span>-->
+    <span class="bg" ng-class="{high: entry.bg > 200, low: entry.bg < 70, inRange: (entry.bg > 70 && entry.bg < 200)}">{{entry.bg}}</span>
+    <span class="direction" ng-bind-html="directionToChar(entry.direction)"></span>
+    <span>{{entry.timestamp | date:'mediumTime'}}</span>
   </div>
 </div>
