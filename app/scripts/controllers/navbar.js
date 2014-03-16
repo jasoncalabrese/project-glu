@@ -20,4 +20,6 @@ angular.module('projectGluApp')
     $scope.isActive = function(route) {
       return route === $location.path();
     };
+
+    $scope.now = function() { return Date.now(); };
   });
