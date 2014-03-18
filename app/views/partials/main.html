@@ -5,7 +5,7 @@
   <div class="current pull-right">
     <span class="bg" ng-class="{high: current.bg > 200, low: entry.bg < 70, inRange: (current.bg > 70 && current.bg < 200)}">{{current.bg}}</span>
     <span class="direction" ng-bind-html="directionToChar(current.direction)"></span>
-    <div class="time">{{current.timestamp | date:'mediumTime'}}</div>
+    <div class="time">{{current.timestamp | date:'shortTime'}}</div>
     <div class="ago">{{ago() | timeago }}</div>
   </div>
   <div class="previous pull-left">
@@ -18,7 +18,7 @@
         <!--</span>-->
         <span class="bg" ng-class="{high: entry.bg > 200, low: entry.bg < 70, inRange: (entry.bg > 70 && entry.bg < 200)}">{{entry.bg}}</span>
         <span class="direction" ng-bind-html="directionToChar(entry.direction)"></span>
-        <span class="time">{{entry.timestamp | date:'mediumTime'}}</span>
+        <span class="time">{{entry.timestamp | date:'shortTime'}}</span>
       </li>
     </ul>
   </div>

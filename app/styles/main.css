@@ -6,12 +6,22 @@ body {
   color: red;
 }
 
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
+.header h2 a {
+  color: red;
+}
+
+.header ul li {
+  list-style: none;
+  display: inline;
+}
+
+.header ul li a {
+  color: red;
+  padding: 10px 15px 0 0;
+}
+
+.header ul li:last-child a {
+  padding-left: 10px;
 }
 
 .pod {

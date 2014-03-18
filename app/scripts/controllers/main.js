@@ -27,7 +27,7 @@ angular.module('projectGluApp')
       'FortyFiveDown': '&#8600;',
       'SingleDown': '&#8595;',
       'DoubleDown': '&#8650;',
-      'NOT COMPUTABLE': '?',
+      'NOT COMPUTABLE': '-',
       'RATE OUT OF RANGE': '&#8622;'
     };
 
