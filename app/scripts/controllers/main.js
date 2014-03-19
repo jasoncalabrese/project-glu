@@ -31,7 +31,7 @@ angular.module('projectGluApp')
 
     startUpdateCycle();
 
-    var mapping = {
+    var dir2Char = {
       'NONE': '&#8700;',
       'DoubleUp': '&#8648;',
       'SingleUp': '&#8593;',
@@ -44,7 +44,19 @@ angular.module('projectGluApp')
       'RATE OUT OF RANGE': '&#8622;'
     };
 
-    var dateFilter = $filter('date');
+    var magicBGs = {
+      0:  '??0', //None
+      1:  '?SN', //SENSOR_NOT_ACTIVE
+      2:  '??2', //MINIMAL_DEVIATION
+      3:  '?NA', //NO_ANTENNA
+      5:  '?NC', //SENSOR_NOT_CALIBRATED
+      6:  '?CD', //COUNTS_DEVIATION
+      7:  '??7', //?
+      8:  '??8', //?
+      9:  '?AD', //ABSOLUTE_DEVIATION
+      10: '?PD', //POWER_DEVIATION
+      12: '?RF' //BAD_RF
+    }
 
     $scope.ago = function() {
       if ($scope.current) {
@@ -56,21 +68,23 @@ angular.module('projectGluApp')
       }
     };
 
-    $scope.showDay = function(entry) {
-      $scope.currentDay = dateFilter(entry.timestamp);
+    $scope.bgDisplay = function(entry) {
+      var bg = (entry && parseInt(entry.bg)) || '';
+      return magicBGs[bg] || bg;
+    };
 
-      if ($scope.currentDay !== $scope.lastDay) {
-        console.info('compared "' + $scope.currentDay + '" to "' + $scope.lastDay);
-        $scope.lastDay = $scope.currentDay;
-        return true;
-      } else {
-        return false;
-      }
+    $scope.bgClass = function(entry) {
+      var bgClass, bg = (entry && parseInt(entry.bg)) || 0;
 
+      if (bg > 180) bgClass = 'bg-high';
+      else if (bg < 70) bgClass = 'bg-low';
+      else bgClass = 'bg-in-range';
+
+      return bgClass;
     };
 
     $scope.directionToChar = function(direction) {
-      return mapping[direction];
+      return dir2Char[direction] || '-';
     };
 
   }).filter('timeago', function () {

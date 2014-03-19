@@ -52,15 +52,15 @@ body {
 .bg {
 }
 
-.bg.inRange {
+.bg-in-range {
     color: green;
 }
 
-.bg.high {
+.bg-high {
     color: orange;
 }
 
-.bg.low {
+.bg-low {
     color: red;
 }
 
