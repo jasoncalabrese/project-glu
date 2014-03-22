@@ -10,7 +10,7 @@ I have a [forked](https://github.com/jasoncalabrese/original-android-cgm) versio
 
 I the android app posting to the web app running locally and at AWS.
 
-I also have a [forked](https://github.com/jasoncalabrese/cgm-remote-monitor) version of [NightScount](https://github.com/rnpenguin/cgm-remote-monitor) running at AWS with the same mongo db as the basic web-app. 
+I also have a [forked](https://github.com/jasoncalabrese/cgm-remote-monitor) version of [NightScout](https://github.com/rnpenguin/cgm-remote-monitor) running at AWS with the same mongo db as the basic web-app. 
 
 next steps
 ----------
