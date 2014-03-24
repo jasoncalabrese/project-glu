@@ -1,12 +1,12 @@
 Project-Glu
 ===========
 
-The goal of Project-Glu is to use a small amount of glue to bring lots of existing things together to make managing my son's T1D easier and safer. The intial focus is on data from the Dexcom G4, but later I'd like to include carbs, insulin and activity data.
+The goal of Project-Glu is to use a small amount of glue to bring lots of existing things together to make managing my son's T1D easier and safer. The intial focus is on data from the Dexcom G4, but later I'd like to include carbs, insulin, and activity data.
 
 current status
 --------------
 
-I have a [forked](https://github.com/jasoncalabrese/original-android-cgm) version of [@jcostik](https://twitter.com/jcostik)'s [original-android-app](https://github.com/hackingtype1/original-android-cgm) running on a Moto G and have it posting simple json to [this](https://github.com/jasoncalabrese/project-glu) node.js/express.js/angular.js/mongo app, I'm planing to replace this app with a localy running instance of the [tidepool platform](http://tidepool.org/platform/).
+I have a [forked](https://github.com/jasoncalabrese/original-android-cgm) version of [@jcostik](https://twitter.com/jcostik)'s [original-android-app](https://github.com/hackingtype1/original-android-cgm) running on a Moto G and have it posting simple json to [this](https://github.com/jasoncalabrese/project-glu) web app, I'm planing to replace this with a locally running instance of the [tidepool platform](http://tidepool.org/platform/).
 
 I have the android app posting to the web app running locally and at AWS so that I can test changes in more controlled way.
 
