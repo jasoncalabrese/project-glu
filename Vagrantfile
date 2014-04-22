@@ -1,5 +1,7 @@
 Vagrant.configure('2') do |config|
 
+  #see https://github.com/smdahlen/vagrant-digitalocean for plugin setup info
+
   config.vm.provider :digital_ocean do |provider, override|
     override.ssh.private_key_path = '~/.ssh/id_dsa'
     override.vm.box = 'digital_ocean'
