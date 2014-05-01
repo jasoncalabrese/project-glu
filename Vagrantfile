@@ -26,6 +26,9 @@ Vagrant.configure('2') do |config|
   #upload script that will clone and setup all the required repos
   config.vm.provision "file", source: "server-config/clone-and-setup-repos.sh", destination: "/home/glu/clone-and-setup-repos.sh"
 
+  #upload script that will clone and setup all the required repos
+  config.vm.provision "file", source: "server-config/backup-cron.sh", destination: "/home/glu/bin/backup-cron.sh"
+
   #upload config file that will configure the Dropbox uploader, ENV must be set to local file path (keep it private!)
   config.vm.provision "file", source: "#{ENV['DB_CONF']}", destination: "/home/glu/.dropbox_uploader"
 

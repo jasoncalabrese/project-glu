@@ -5,6 +5,8 @@
 ##############################
 
 cd
+#install backup cron
+(crontab -l 2>/dev/null; echo "5 3 * * * /home/glu/bin/backup-cron.sh") | crontab -
 
 git clone https://github.com/jasoncalabrese/project-glu.git
 cd project-glu/
