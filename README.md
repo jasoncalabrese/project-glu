@@ -21,7 +21,7 @@ To give it a try follow these steps:
   1. configure dropbox: https://github.com/andreafabrizi/Dropbox-Uploader
   1. Set ENV VARS
     * use the Digital Ocean [api page](https://cloud.digitalocean.com/api_access) to find your values for: DO_CLIENT_ID, DO_API_KEY
-    * `DB_CONF="/full/path/to/DropboxUploader.conf"`
+    * `DB_CONF="/Users/<YOU>/.dropbox_uploader"` OR `DB_CONF="/home/<YOU>/.dropbox_uploader"`
   1. `vagrant up --provider=digital_ocean` and wait (I'm using a mac and have no idea if this would/could work from windows)
   1. done
 
