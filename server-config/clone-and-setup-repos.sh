@@ -5,9 +5,6 @@
 ##############################
 
 cd
-#install backup cron
-(crontab -l 2>/dev/null; echo "5 3 * * * /home/glu/bin/backup-cron.sh") | crontab -
-
 git clone https://github.com/jasoncalabrese/project-glu.git
 cd project-glu/
 npm install
@@ -26,7 +23,11 @@ git clone https://github.com/andreafabrizi/Dropbox-Uploader/
 cd ..
 
 #Download most recent backup from dropbox
-BACKUP=$(Dropbox-Uploader/dropbox_uploader.sh list | tail -n1 | awk '{ print $3 }')
-Dropbox-Uploader/dropbox_uploader.sh download $BACKUP
-tar -xzvf $BACKUP
-mongorestore --db project-glu dump/project-glu/
+#BACKUP=$(Dropbox-Uploader/dropbox_uploader.sh list | tail -n1 | awk '{ print $3 }')
+#Dropbox-Uploader/dropbox_uploader.sh download $BACKUP
+#tar -xzvf $BACKUP
+#mongorestore --db project-glu dump/project-glu/
+
+#install backup cron
+(crontab -l 2>/dev/null; echo "#5 3 * * * /home/glu/bin/backup-cron.sh") | crontab -
+

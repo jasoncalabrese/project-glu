@@ -30,7 +30,7 @@ Vagrant.configure('2') do |config|
   config.vm.provision "file", source: "server-config/backup-cron.sh", destination: "/home/glu/bin/backup-cron.sh"
 
   #upload config file that will configure the Dropbox uploader, ENV must be set to local file path (keep it private!)
-  config.vm.provision "file", source: "#{ENV['DB_CONF']}", destination: "/home/glu/.dropbox_uploader"
+  #config.vm.provision "file", source: "#{ENV['DB_CONF']}", destination: "/home/glu/.dropbox_uploader"
 
   #run the main vagrant-init.sh script, will do global installs as root then run clone-and-setup-repos.sh as the glu user
   config.vm.provision "shell", path: "server-config/vagrant-init.sh", privileged: false, keep_color: true
