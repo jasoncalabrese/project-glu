@@ -35,7 +35,7 @@ To give it a try follow these steps:**
 * started everything
 * installed a cron script that runs nightly to backup data to dropbox
 
-**Once all of that is done and assuming there were now big errors you should be able to:**
+**Once all of that is done and assuming there were no big errors you should be able to:**
 
 _In links below replace YOUR_DROPLET_IP with the IP address of your droplet, this should be one of the last lines after running `vagrant up` or you can find it at [digital ocean](https://cloud.digitalocean.com/droplets)_
 
