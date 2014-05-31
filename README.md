@@ -6,10 +6,12 @@ The goal of Project-Glu is to use a small amount of glue to bring lots of existi
 current status
 --------------
 
-I have a [forked](https://github.com/jasoncalabrese/original-android-cgm) version of [@jcostik](https://twitter.com/jcostik)'s [original-android-app](https://github.com/hackingtype1/original-android-cgm) running on a Moto G and have it posting simple json to [this](https://github.com/jasoncalabrese/project-glu) web app, I'm planing to replace this with a locally running instance of the [tidepool platform](http://tidepool.org/platform/).
+Most things here are in the process of being consolidated with the community maintained [Nightscout versions](http://nightscout.github.io/)
 
-I also have a [forked](https://github.com/jasoncalabrese/cgm-remote-monitor) version of [NightScout](https://github.com/rnpenguin/cgm-remote-monitor) that uses the same mongo db as the basic web-app
-and a [forked](https://github.com/jasoncalabrese/cgm-pebble) version of [cgm-pebble](https://github.com/hackingtype1/cgm-pebble) that connects to the project-glu endpoint to display the current BG value on a Pebble watch.
+As of this time I'm only using [this](https://github.com/jasoncalabrese/project-glu) web app and my vagrant based auto deploy.
+
+I've switched to using the [community maintained android uploader](https://github.com/nightscout/dexcom-uploader) and the [community maintained pebble app](https://github.com/nightscout/cgm-remote-monitor)
+
 
 **For quick, easy, and repeatable deploys I'm using vagrant.
 To give it a try follow these steps:**
@@ -47,6 +49,8 @@ _In links below replace YOUR_DROPLET_IP with the IP address of your droplet, thi
 next steps
 ----------
 
-Tracking ideas/progress on [trello](https://trello.com/b/k8dwYmAI/project-glu)
+Tracking ideas/progress on [trello](https://trello.com/b/AL0kioCf/nightscout-core-dev)
+
+We're also using the [CGM in the Cloud](https://www.facebook.com/groups/cgminthecloud/) facebook group
 
 -[@jasoncalabrese](https://twitter.com/jasoncalabrese)
