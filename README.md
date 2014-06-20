@@ -18,7 +18,7 @@ To give it a try follow these steps:**
 
   1. clone repo `git clone https://github.com/jasoncalabrese/project-glu.git; cd project-glu`
   1. [install vagrant](http://docs.vagrantup.com/v2/installation/index.html)
-  1. setup a [digital ocean](https://www.digitalocean.com/?refcode=78da7dabdaf4) account: use promo code 'DODEPLOY' for 2 free months - **link includes my referral code**
+  1. setup a [digital ocean](https://www.digitalocean.com/?refcode=78da7dabdaf4) account: use promo code '10TOSHIP' for 2 free months - **link includes my referral code**
   1. install https://github.com/smdahlen/vagrant-digitalocean
   1. configure dropbox: https://github.com/andreafabrizi/Dropbox-Uploader
   1. Set ENV VARS
