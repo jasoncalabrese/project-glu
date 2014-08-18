@@ -1,20 +1,13 @@
 Project-Glu
 ===========
 
-The goal of Project-Glu is to use a small amount of glue to bring lots of existing things together to make managing my son's T1D easier and safer. The intial focus is on data from the Dexcom G4, but later I'd like to include carbs, insulin, and activity data.
+The goal's of Project-Glu was to use a small amount of glue to bring lots of existing things together to make managing my son's T1D easier and safer. Shortly after starting this I started working with several others on the Nightscout Project that combined several projects together.
 
-current status
---------------
+Almost everything here consolidated with the community maintained [Nightscout versions](http://nightscout.github.io/)
 
-Most things here are in the process of being consolidated with the community maintained [Nightscout versions](http://nightscout.github.io/)
+As of this time the only thing that hasn't been migrated is my vagrant based auto deploy.
 
-As of this time I'm only using [this](https://github.com/jasoncalabrese/project-glu) web app and my vagrant based auto deploy.
-
-I've switched to using the [community maintained android uploader](https://github.com/nightscout/dexcom-uploader) and the [community maintained pebble app](https://github.com/nightscout/cgm-remote-monitor)
-
-
-**For quick, easy, and repeatable deploys I'm using vagrant.
-To give it a try follow these steps:**
+**Old deploy steps, that will be migrted to a new Nightscout repo:**
 
   1. clone repo `git clone https://github.com/jasoncalabrese/project-glu.git; cd project-glu`
   1. [install vagrant](http://docs.vagrantup.com/v2/installation/index.html)
@@ -45,12 +38,5 @@ _In links below replace YOUR_DROPLET_IP with the IP address of your droplet, thi
 * See [the Project-Glu login on your droplet](http://YOUR_DROPLET_IP)
 * And if those work, update the Android uploader so it can start uploading to you're new droplet (more info comming later)
 
-
-next steps
-----------
-
-Tracking ideas/progress on [trello](https://trello.com/b/AL0kioCf/nightscout-core-dev)
-
-We're also using the [CGM in the Cloud](https://www.facebook.com/groups/cgminthecloud/) facebook group
 
 -[@jasoncalabrese](https://twitter.com/jasoncalabrese)
