@@ -3,9 +3,7 @@ Project-Glu
 
 The goal's of Project-Glu was to use a small amount of glue to bring lots of existing things together to make managing my son's T1D easier and safer. Shortly after starting this I started working with several others on the Nightscout Project that combined several projects together.
 
-Almost everything here consolidated with the community maintained [Nightscout versions](http://nightscout.github.io/)
-
-As of this time the only thing that hasn't been migrated is my vagrant based auto deploy.
+Almost everything here consolidated with the community maintained [Nightscout versions](http://nightscout.github.io/). As of this time the only thing that hasn't been migrated is my vagrant based auto deploy.
 
 **Old deploy steps, that will be migrted to a new Nightscout repo:**
 
